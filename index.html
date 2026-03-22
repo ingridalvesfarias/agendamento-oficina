@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agendamento de Oficina</h1>
+            <p>Escolha sua data e horário</p>
+        </header>
+
+        <form id="agendamentoForm">
+            <div class="section-title">Cliente</div>
+            <div class="input-group">
+                <input type="text" id="nome" placeholder="Seu nome completo" required>
+            </div>
+
+            <div class="section-title">Veículo</div>
+            <div class="grid-inputs">
+                <input type="text" id="carro" placeholder="Modelo" required>
+                <input type="text" id="placa" placeholder="Placa" required>
+            </div>
+            <div class="grid-inputs" style="margin-top: 10px;">
+                <input type="number" id="km" placeholder="KM atual" required>
+                <input type="number" id="ano" placeholder="Ano" required>
+            </div>
+
+            <div class="section-title">Serviço</div>
+            <div class="input-group">
+                <input type="date" id="data" required>
+                <small class="helper-text">* Seg a Sex</small>
+            </div>
+            <div class="input-group">
+                <select id="servico" required>
+                    <option value="" disabled selected>O que o carro tem?</option>
+                    <option value="Revisão">Revisão Geral</option>
+                    <option value="Óleo">Troca de Óleo</option>
+                    <option value="Freio">Freios/Suspensão</option>
+                    <option value="Painel">Luz no Painel</option>
+                    <option value="Outro">Outro problema</option>
+                </select>
+            </div>
+
+            <textarea id="obs" rows="2" placeholder="Alguma observação?"></textarea>
+
+            <button type="submit" class="btn-enviar">Confirmar no WhatsApp</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
