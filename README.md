@@ -15,3 +15,5 @@ Sistema de agendamento mobile-first desenvolvido para oficinas mecânicas que bu
 
 ## 🚀 Acesse o Projeto
 Acesse: [agendamento-oficina.vercel.app](https://agendamento-oficina.vercel.app/)
+
+<img src="img/imagem do projeto.png" alt="imagem do projeto">
